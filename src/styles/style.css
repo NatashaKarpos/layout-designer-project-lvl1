@@ -55,13 +55,16 @@ h3 {
 }
 
 header {
-  background-color: var(--bright);
   z-index: -1;
 }
 .container {
   max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
+  position: relative;
+}
+
+.main-bg {
   position: relative;
 }
 
@@ -85,6 +88,7 @@ header {
 .column-2 {
   column-count: 2;
   column-gap: 30px;
+  column-width: 50%;
 }
 
 .break-after {
@@ -180,4 +184,42 @@ header {
   margin-bottom: 40px;
   font: 64px/1 Neucha;
   color: var(--main-dark)
+}
+
+.small-title {
+  column-span: all;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.img-container {
+  background-color: #fff;
+}
+
+
+.distortion {
+  color: var(--half-opacity-dark);
+  font: 24px/29px 'Neucha';
+}
+
+.distortion-name {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.brown {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.white {
+  color: var(--brown);
+  background-color: var(--white);
 }
